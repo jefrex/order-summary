@@ -1,0 +1,229 @@
+/* 
+## Colors
+Primary:
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+Neutral
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+Typography:
+Body Copy
+- Font size (paragraph): 16px
+
+Font:
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+main {
+    margin: auto;
+}
+
+#card {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    height: 600px;
+    box-shadow: 0 20px 50px 0px rgba(0, 0, 0, 0.288);
+}
+
+#card > img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;    
+}
+
+.card-content {
+    margin: 0 auto;    
+    height: 100%;
+    overflow-y: hidden;
+}
+
+#card-text {
+    width: 350px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#card-text #title {
+    font-size: 1.7em;
+    font-weight: 900;
+    padding: 10px;
+}
+
+#card-text > p {
+    font-size: 1em;   
+    line-height: 1.4em; 
+}
+
+#card-sub-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(225, 100%, 96%, 0.712);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 0 25px 0;
+}
+
+#price {
+    display: flex;
+    align-items: center;
+}
+
+#price > img {
+    margin-right: 15px;
+}
+
+#price > p {
+    line-height: 1.5em;
+    font-weight: 700;
+    
+}
+
+#dolar {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+a {
+    
+    font-weight: 700;
+}
+
+#card-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    width: 350px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+#card-btn-pay {
+    padding: 15px;
+    width: 345px;
+    border: none;
+    border-radius: 12px;
+    background-color: hsl(245, 75%, 52%);
+    color: #FFFFFF;
+    font-weight: 700;
+    box-shadow: 0 12px 10px 1px hsl(253, 100%, 90%);
+    cursor: pointer;
+}
+
+#card-btn-cancel {
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+
+
+/* Footer */
+
+footer {
+    flex-shrink: 0;
+    bottom: 0;
+    margin: 15px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* responsive */
+
+@media (max-width: 425px) {
+    #card {        
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .card-content {  
+        width: 100%;
+        
+    }
+
+    #card-text {
+        width: 260px;
+        margin: 20px auto;
+    }
+
+    #card-text #title {
+        font-size: 1.5em;
+    }
+
+
+    #card-sub-info {
+        width: 300px;
+        margin: 25px auto;
+    }
+
+    #card-btn {
+        width: 300px;
+        margin: 20px auto;
+    }
+
+    #card-btn-pay {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 375px) {
+    #card {        
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .card-content {  
+        width: 100%;
+        
+    }
+
+    #card-text {
+        max-width: 260px;
+        margin: 20px auto;
+    }
+
+
+    #card-sub-info {
+        width: 260px;
+        margin: 25px auto;
+    }
+
+    #card-btn {
+        width: 260px;
+        margin: 20px auto;
+    }
+
+}

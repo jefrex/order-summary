@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link
+    href="https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  Order Summary
+  <main>
+    <div id="card">
+      <img src="images/illustration-hero.svg" alt="photo order card">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+      <div class="card-content">
+        <div id="card-text">
+          <p id="title" role="order-summary">Order Summary</p>
+          <p>You can now listen to millions of songs, audiobooks, and podcasts on any
+            device anywhere you like!
+          </p>
+        </div>
 
-  Annual Plan
-  $59.99/year
+        <div id="card-sub-info">
+          <div id="price">
+            <img src="images/icon-music.svg" alt="icone music">
+            <p>Annual Plan <br>
+              <span id="dolar">$59.99/year</span>
+            </p>
+          </div>
+          <a href="#">Change</a>
+        </div>
+        <div id="card-btn">
+          <button id="card-btn-pay">Proceed to Payment</button>
+          <button id="card-btn-cancel">Cancel Order</button>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    <br> Coded by <a href="#">Jeferson Alves Dos Santos</a>.
+  </footer>
 </body>
+
 </html>
